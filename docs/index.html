@@ -29,67 +29,10 @@
 			attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
 		}).addTo(map);
 
-		let gpx_lst_15 = ['2015hatsunobori.gpx', '2015koyo.gpx', '2015yobi1.gpx', '2015yobi2.gpx', '2015yobi3.gpx'];
-		let gpx_lst_16 = ['2016sado1.gpx', '2016sado2.gpx', '2016yobi1.gpx', '2016yobi2.gpx', '2016yobi3.gpx'];
-		let gpx_lst_17 = ['2017geika.gpx', '2017haru.gpx', '2017haru2.gpx', '2017izuoshima.gpx', '2017meidaitt1-1.gpx', '2017meidaitt1-2.gpx', '2017meidaitt1-3.gpx', '2017meidaitt1-4.gpx', '2017odarumi.gpx', '2017rtt.gpx', '2017satsuei.gpx', '2017suika.gpx', '2017toge-summer.gpx', '2017utsukushigahara1.gpx', '2017utsukushigahara2.gpx', '2017yobi1.gpx', '2017yobi2.gpx', '2017yobi3.gpx'];
-		let gpx_lst_19 = ['2019noto.gpx'];
+		let gpx_lst = ['2015hatsunobori.gpx', '2015hokkaido1.gpx', '2015hokkaido2.gpx', '2015hokkaido3.gpx', '2015koyo.gpx', '2015yobi1.gpx', '2015yobi2.gpx', '2015yobi3.gpx', '2016sado1.gpx', '2016sado2.gpx', '2016tohoku1.gpx', '2016tohoku2.gpx', '2016tohoku3.gpx', '2016tohoku4.gpx', '2016yobi1.gpx', '2016yobi2.gpx', '2016yobi3.gpx', '2017fumeihan.gpx', '2017geika.gpx', '2017haru.gpx', '2017haru2.gpx', '2017hokkaido1.gpx', '2017hokkaido2.gpx', '2017hokkaido3.gpx', '2017hokkaido4.gpx', '2017izuoshima.gpx', '2017meidaitt1-1.gpx', '2017meidaitt1-2.gpx', '2017meidaitt1-3.gpx', '2017meidaitt1-4.gpx', '2017odarumi.gpx', '2017rtt.gpx', '2017satsuei.gpx', '2017suika.gpx', '2017toge-summer.gpx', '2017utsukushigahara1.gpx', '2017utsukushigahara2.gpx', '2017yobi1.gpx', '2017yobi2.gpx', '2017yobi3.gpx', '2019noto.gpx'];
 
-		for(let i = 0; i < gpx_lst_15.length; i++) {
-			new L.GPX('gpx/'+gpx_lst_15[i], {
-				async: true,
-				marker_options: {
-					startIconUrl: false,
-					endIconUrl: false,
-					shadowUrl: false
-				},
-				polyline_options: {
-					color: 'red',
-					opacity: 0.75,
-					weight: 3,
-					lineCap: 'round'
-		    	}
-			}).on('loaded', function(e) {
-			}).addTo(map);
-		}
-
-		for(let i = 0; i < gpx_lst_16.length; i++) {
-			new L.GPX('gpx/'+gpx_lst_16[i], {
-				async: true,
-				marker_options: {
-					startIconUrl: false,
-					endIconUrl: false,
-					shadowUrl: false
-				},
-				polyline_options: {
-					color: 'red',
-					opacity: 0.75,
-					weight: 3,
-					lineCap: 'round'
-		    	}
-			}).on('loaded', function(e) {
-			}).addTo(map);
-		}
-
-		for(let i = 0; i < gpx_lst_17.length; i++) {
-			new L.GPX('gpx/'+gpx_lst_17[i], {
-				async: true,
-				marker_options: {
-					startIconUrl: false,
-					endIconUrl: false,
-					shadowUrl: false
-				},
-				polyline_options: {
-					color: 'red',
-					opacity: 0.75,
-					weight: 3,
-					lineCap: 'round'
-		    	}
-			}).on('loaded', function(e) {
-			}).addTo(map);
-		}
-
-		for(let i = 0; i < gpx_lst_19.length; i++) {
-			new L.GPX('gpx/'+gpx_lst_19[i], {
+		for(let i = 0; i < gpx_lst.length; i++) {
+			new L.GPX('gpx/'+gpx_lst[i], {
 				async: true,
 				marker_options: {
 					startIconUrl: false,
